@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trang mua hàng</title>
+  </head>
+  <body>
+    <header>
+      <h1>Trang mua hàng</h1>
+      <hr />
+    </header>
+
+    <main>
+      <section>
+        <h2>Giới thiệu, mô tả sản phẩm</h2>
+        <aside>
+          <ul>
+            <li><h3>Ảnh sản phẩm</h3></li>
+            <img src="./casio.jpg" alt="máy tính casio" width="150" /><br />
+            <li><h3>Thông tin sản phẩm</h3></li>
+            <p>
+              <strong>Tên sản phẩm:</strong> Máy tính Casio FX-580VNX <br />
+              <strong>Giá:</strong> 700.000 VNĐ <br />
+              <strong>Mô tả:</strong> Máy tính Casio FX-580VNX là một trong
+              những dòng máy tính cầm tay phổ biến và được ưa chuộng tại Việt
+              Nam. Nó có nhiều tính năng hữu ích cho học sinh, sinh viên và
+              những người làm việc trong lĩnh vực toán học.
+            </p>
+          </ul>
+        </aside>
+      </section>
+
+      <section>
+        <h2>Lựa chọn</h2>
+        <ul>
+          <aside>
+            <li><h3>Mua sản phẩm🛍️</h3></li>
+            <form action="thanks.html">
+              <label for="soLuong">Số lượng</label>
+              <input
+                type="number"
+                id="soLuong"
+                name="soLuong"
+                min="1"
+                value="1"
+                required
+              /><br />
+              <label for="mau">Màu</label>
+              <select id="mau" name="mau" required>
+                <option value="trang">trắng⬜</option>
+                <option value="xanh">xanh🟦</option>
+                <option value="hong">hồng🟥</option>
+              </select>
+              <button type="submit">Mua</button>
+            </form>
+          </aside>
+          <aside>
+            <li><h3>Đánh giá sản phẩm⭐</h3></li>
+            <form action="danhGia.html">
+              <label for="danhGia">Đánh giá:</label>
+              <select id="danhGia" name="danhGia" required>
+                <option value="5">⭐⭐⭐⭐⭐</option>
+                <option value="4">⭐⭐⭐⭐</option>
+                <option value="3">⭐⭐⭐</option>
+                <option value="2">⭐⭐</option>
+                <option value="1">⭐</option>
+              </select>
+              <br />
+              <label for="binhLuan">Bình luận:</label>
+              <input
+                type="text"
+                id="binhLuan"
+                name="binhLuan"
+                placeholder="Không bắt buộc"
+              />
+              <button type="submit">Gửi đánh giá</button>
+            </form>
+          </aside>
+          <aside>
+            <li><h3>Tìm kiếm sản phẩm khác🔍</h3></li>
+            <form action="timKiem.html" method="get">
+              <label for="timKiem"></label>
+              <input
+                type="text"
+                id="timKiem"
+                name="timKiem"
+                placeholder="Nhập từ khóa tìm kiếm"
+                required
+              />
+              <button type="submit">Tìm kiếm</button>
+            </form>
+          </aside>
+        </ul>
+      </section>
+      <aside>
+        <a href="mailto:cuongpc2k12@gmail.com">admin's gmail</a><br />
+        <a href="">Tải lại trang</a><br />
+      </aside>
+    </main>
+
+    <footer>
+      <hr />
+      <p>&copy; 2026 My First Web Page. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
